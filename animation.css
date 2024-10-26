@@ -1,0 +1,126 @@
+
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.first-project::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    translate: -50%-50%;
+    background:linear-gradient(transparent 10% ,green,gold,blue,red);
+    animation: rotate 4s linear
+                infinite;
+    padding: 5px;
+    filter: blur(20px);
+    z-index: -1;
+}
+.first-project::after{
+    content: "";
+    position: absolute;
+    background: black;
+    inset: 5px;
+    border-radius: 10px;
+    z-index: -1;
+}
+.second-project::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    translate: -50%-50%;
+    background:linear-gradient(transparent 10% ,green,gold,blue,red);
+    animation: rotate 4s linear
+                infinite;
+    padding: 5px;
+    filter: blur(20px);
+    z-index: -1;
+}
+.second-project::after{
+    content: "";
+    position: absolute;
+    background: black;
+    inset: 5px;
+    border-radius: 10px;
+    z-index: -1;
+}
+.third-project::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    translate: -50%-50%;
+    background:linear-gradient(transparent 10% ,green,gold,blue,red);
+    animation: rotate 4s linear
+                infinite;
+    padding: 5px;
+    filter: blur(20px);
+    z-index: -1;
+}
+.third-project::after{
+    content: "";
+    position: absolute;
+    background: black;
+    inset: 5px;
+    border-radius: 10px;
+    z-index: -1;
+}
+.bgAnimation{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(20,1fr);
+    grid-template-rows: repeat(20,1fr);
+    background: #1d1d1d;
+    filter: saturate(2);
+    overflow: hidden;
+}
+
+.colorBox{
+    z-index: 2;
+    filter: brightness(1.1);
+    transition: 2s ease;
+    position: relative;
+    margin: 2px;
+    background: #1d1d1d;
+}
+
+.colorBox:hover{
+    background: #0aa34f;
+    transition-duration: 0s;
+}
+
+.backgroundAmim{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: #bdc6c9;
+    filter: blur(60px);
+    animation: animBack 6s linear infinite;
+}
+
+@keyframes animBack {
+    0%{
+        top: -60px;
+    }
+    100%{
+        top: 120%;
+    }
+}
