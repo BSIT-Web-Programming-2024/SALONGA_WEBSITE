@@ -1,49 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="animation.css" />
-  </head>
-  <body>
-    <div class="background">
-      <div class="intro">
-        <a class="ren" href="#ren">Reneir Salonga</a>
-        <span class="sp1">Web Developer </span>
-      </div>
-    <div class="personal-info-ren" id="ren">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reneir Salonga - Web Developer</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="animation.css" />
+</head>
+<body>
+  <div class="background">
+    <header class="intro">
+      <a class="ren" href="#ren">Reneir Salonga</a>
+      <span class="sp1">Web Developer</span>
+    </header>
+
+    <section class="personal-info-ren" id="ren">
       <h1 class="personal-heading-ren">Personal Info</h1>
-      <img class="renpic" src="renpic.jpg" alt="" />
+      <img class="renpic" src="renpic.jpg" alt="Reneir Salonga" />
       <p class="ren-info">
-        I am Reneir Salonga, I am an aspiring web developer. I graduated at Data Center
-          College of the Philippines. I admire work and I love gadgets. My hobbies are playing games,
-          watching movies and playing basketball. I am hardworking and simply wouldn't stop when I 
-          dont know the answer.
+        I am Reneir Salonga, an aspiring web developer. I graduated from Data Center
+        College of the Philippines. I admire work and love gadgets. My hobbies include
+        gaming, watching movies, and playing basketball. I'm hardworking and strive
+        to find solutions when facing challenges.
       </p>
-    </div>
-    <div class="personal-skill-ren">
-      <h1 class="skill-heading-ren">SKILLS</h1>
-      <div class="skills1">LEADERSHIP SKILL</div>
-      <div class="skills2">CODING SKILL</div>
-      <div class="skills3">EFFICIENCY</div>
-      <div class="skills4">CRITICAL THINKING</div>
-      <div class="skills5">STRONG WORK ETHICS</div>
-      <div class="skills6">ACTIVE LISTENER</div>
-    </div>
+    </section>
+
+    <section class="personal-skill-ren">
+      <h1 class="skill-heading-ren">Skills</h1>
+      <div class="skills1">Leadership Skill</div>
+      <div class="skills2">Coding Skill</div>
+      <div class="skills3">Efficiency</div>
+      <div class="skills4">Critical Thinking</div>
+      <div class="skills5">Strong Work Ethics</div>
+      <div class="skills6">Active Listener</div>
+    </section>
+
+    <section class="Projects-container-ren">
+      <h1>Projects</h1>
+      <div class="first-project"><span class="first-h1">Coming Soon</span></div>
+      <div class="second-project"><span class="sec-h1">Coming Soon</span></div>
+      <div class="third-project"><span class="third-h1">Coming Soon</span></div>
+    </section>
   </div>
-  <div class="Projects-container-ren">
-    <h1>Projects</h1>
-    <div class="first-project"><span class="first-h1">Coming Soon</span></div>
-    <div class="second-project"><span class="sec-h1">Coming Soon</span></div>
-    <div class="third-project"><span class="third-h1">Coming Soon</span></div>
-  </div>
-  <div class="bgAnimation" id="bgAnimation">
-    <div class="backgroundAmim">
+
+  <footer class="contact-container">
+    <h1>Contact</h1>
+    <form class="contact-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+    <div class="social-links">
+      <p>Follow me on:</p>
+      <a href="https://facebook.com" target="_blank">Facebook</a>
+      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+      <a href="https://github.com" target="_blank">GitHub</a>
     </div>
-    <script src="./index,.js"></script>
-</div>
-  </body>
+  </footer>
+
+  <script src="./index.js"></script>
+</body>
 </html>
 
