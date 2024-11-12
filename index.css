@@ -27,7 +27,8 @@ body {
   transform: perspective(900px) scale(0.8) rotateY(20deg) rotateX(20deg);
   box-shadow: 5px 5px 15px 0px rgb(34, 156, 30);
 }
-.sp1 {
+
+.sp1{
   background-color: #00ffff;
   border-radius: 10px;
   margin-top: 20px;
@@ -254,7 +255,7 @@ body {
   transition: transform 2s ease, box-shadow 2s;
 }
 .personal-skill-ren:hover {
-  transform: perspective(900px) scale(0.8) rotateY(-15deg) rotateX(20deg);
+  transform: perspective(900px) scale(0.8) rotateY(20deg) rotateX(20deg);
   box-shadow: 5px 5px 15px 0px green;
 }
 .skills1 {
@@ -402,6 +403,71 @@ body {
 }
 .skill-heading-ren {
   color: white;
+}
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+  width: 100%;
+  padding: 40px;
+  background: black;
+  color: #fff;
+  text-align: center;
+  margin-top: 130%;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact form styling */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: #ffffff;
+  color: #333;
+}
+
+.contact-form button {
+  background-color: #005bb5;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #004799;
+}
+
+/* Social links styling */
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links a {
+  margin: 0 15px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #dfefff;
 }
 
 
