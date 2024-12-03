@@ -141,7 +141,6 @@ body {
   transform: scale(1.6);
 }
 .Projects-container {
-  color: white;
   background-color: transparent;
   backdrop-filter: blur(5px);
   display: flex;
