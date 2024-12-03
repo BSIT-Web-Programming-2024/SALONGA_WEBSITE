@@ -42,30 +42,32 @@
       <div class="third-project"><span class="third-h1">Coming Soon</span></div>
     </section>
   </div>
+ <div class="bgAnimation" id="bgAnimation">
+  <div class="backgroundAmim"></div>
+ </div>
 
   <footer class="contact-container">
-    <h1>Contact</h1>
-    <form class="contact-form">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required />
+    <h2>Contact Information</h2>
+    <form action="save_contact.php" method="POST">
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required />
+        <label for="contact">Contact Number:</label><br>
+        <input type="text" id="contact" name="contact" required><br><br>
 
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="4" required></textarea>
-
-      <button type="submit">Send Message</button>
-    </form>
+        <input type="submit" value="Submit">
+    
+      </form>
     <div class="social-links">
       <p>Follow me on:</p>
-      <a href="https://facebook.com" target="_blank">Facebook</a>
+      <a href="https://facebook.com" target="https://www.facebook.com/Salonga24">Facebook</a>
       <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-      <a href="https://github.com" target="_blank">GitHub</a>
+      <a href="https://github.com" target="https://github.com/Rennnn31323">GitHub</a>
     </div>
   </footer>
 
-  <script src="index.js"></script>
+  <script src="./index.js"></script>
+</div>
 </body>
 </html>
 
