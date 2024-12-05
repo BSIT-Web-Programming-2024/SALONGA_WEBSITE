@@ -48,16 +48,20 @@
 
   <footer class="contact-container">
     <h2>Contact Information</h2>
+    
     <form action="save_contact.php" method="POST">
         <label for="email">Email:</label><br>
         <input type="email" id="email" name="email" required><br><br>
-
+    
         <label for="contact">Contact Number:</label><br>
         <input type="text" id="contact" name="contact" required><br><br>
-
-        <input type="submit" value="Submit">
     
-      </form>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+    
+        <input type="submit" value="Submit">
+    </form>
+    
     <div class="social-links">
       <p>Follow me on:</p>
       <a href="https://facebook.com" target="https://www.facebook.com/Salonga24">Facebook</a>
@@ -70,4 +74,3 @@
 </div>
 </body>
 </html>
-
