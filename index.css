@@ -1,474 +1,486 @@
 body {
-  background-color: rgb(235, 237, 243);
-  margin: 0px;
-  background-color: #1d1d1d;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    background-color: rgb(235, 237, 243);
+    margin: 0px;
+    background-color: #1d1d1d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  /* Default Light Mode */
+body {
+  --background-color: green;
+  --text-color: black;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
-.intro {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 30%;
-  padding: 10%;
-  text-align: center;
-  position: relative;
-  left: 25%;
-  background-color: transparent;
-  border-radius: 15px;
-  backdrop-filter: blur(5px);
-  box-shadow: 5px 5px 15px 0px black;
-  transition: transform 2s ease, box-shadow 2s;
-  z-index: 1;
-}
-.intro:hover {
-  transform: perspective(900px) scale(0.8) rotateY(20deg) rotateX(20deg);
-  box-shadow: 5px 5px 15px 0px rgb(34, 156, 30);
+/* Dark Mode */
+body[data-theme="dark"] {
+  --background-color: black;
+  --text-color: white;
 }
 
-.sp1{
-  background-color: #00ffff;
-  border-radius: 10px;
-  margin-top: 20px;
-  border: 2px solid beige;
-  transition: transform 1s;
-}
-.ren {
-  color: red;
-  text-decoration: none;
-  font-size: 40px;
-  transition: transform 1s, box-shadow 2s;
-}
-.ren:hover {
-  transform: scale(1.2);
-  box-shadow: 5px 5px 15px 0px white;
-}
-.sp1:hover {
-  transform: scale(1.2);
-}
-
-.skills1 {
-  background-color: rgb(214, 248, 151);
-  width: 40%;
-  padding: 5px;
-  margin-top: 50px;
-  margin-bottom: 0px;
-  border-radius: 10px;
-  border-bottom: 5px;
-  border-style: solid;
-  transition: transform 1s;
-}
-.skills2 {
-  background-color: rgb(18, 235, 83);
-  width: 80%;
-  padding: 5px;
-  margin-bottom: 0px;
-  margin-top: 30px;
-  border-radius: 10px;
-  border-bottom: 5px;
-  border-style: solid;
-  transition: transform 1s;
-}
-.skill-heading-luis {
-  margin-bottom: 0px;
-}
-.skills3 {
-  background-color: rgb(235, 139, 139);
-  width: 80%;
-  padding: 5px;
-  margin-bottom: 0px;
-  margin-top: 30px;
-  border-radius: 10px;
-  border-bottom: 5px;
-  border-style: solid;
-  transition: transform 1s;
-}
-.skills4 {
-  background-color: rgb(92, 124, 18);
-  width: 60%;
-  padding: 5px;
-  margin-bottom: 0px;
-  margin-top: 30px;
-  border-radius: 10px;
-  border-bottom: 5px;
-  border-style: solid;
-  transition: transform 1s;
-}
-.skills5 {
-  background-color: rgb(20, 120, 187);
-  width: 90%;
-  padding: 5px;
-  margin-bottom: 0px;
-  margin-top: 30px;
-  border-radius: 10px;
-  border-bottom: 5px;
-  border-style: solid;
-  transition: transform 1s;
-}
-.skills6 {
-  background-color: rgb(157, 18, 175);
-  width: 90%;
-  padding: 5px;
-  margin-bottom: 0px;
-  margin-top: 30px;
-  border-radius: 10px;
-  border-bottom: 5px;
-  border-style: solid;
-  transition: transform 1s;
-}
-.skills1:hover {
-  transform: scale(1.6);
-}
-.skills2:hover {
-  transform: scale(1.6);
-}
-
-.skills3:hover {
-  transform: scale(1.6);
-}
-
-.skills4:hover {
-  transform: scale(1.6);
-}
-
-.skills5:hover {
-  transform: scale(1.6);
-}
-
-.skills6:hover {
-  transform: scale(1.6);
-}
-.Projects-container {
-  background-color: transparent;
-  backdrop-filter: blur(5px);
-  display: flex;
-  justify-content: space-around;
-  align-content: center;
-  position: absolute;
-  top: 230%;
-  text-align: center;
-  width: 90%;
-  left: 4%;
-  height: 500px;
-  padding: 10px;
-  border-radius: 30px;
-  border-left: 5px black;
-  border-style: solid;
-  transition: transform 2s ease, box-shadow 2s;
-}
-.first-project {
-  color: white;
-  position: relative;
-  background-color: transparent;
-  border-radius: 10px;
-  margin-top: 80px;
-  width: 20%;
-  overflow: hidden;
-}
-.second-project {
-  color: white;
-  position: relative;
-  background-color: transparent;
-  margin-top: 80px;
-  border-radius: 10px;
-  width: 20%;
-  overflow: hidden;
-}
-.third-project {
-  color: white;
-  position: relative;
-  background-color: transparent;
-  margin-top: 80px;
-  border-radius: 10px;
-  width: 20%;
-  overflow: hidden;
-}
-.first-h1,
-.sec-h1,
-.third-h1 {
-  position: absolute;
-  top: 30%;
-  left: 10%;
-  font: 40px bold;
-}
-.personal-info-ren {
-  background-color: transparent;
-  backdrop-filter: blur(5px);
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 100%;
-  left: 10%;
-  text-align: center;
-  width: 40%;
-  height: 500px;
-  padding: 10px;
-  border-radius: 30px;
-  color: white;
-  transition: transform 2s ease, box-shadow 2s;
-}
-
-.ren-info {
-  width: 50%;
-  margin-left: 25%;
-  transition: transform 2s;
-}
-.renpic {
-  width: 30%;
-  margin-left: 259px;
-  border-radius: 70px;
-  transition: transform 2s;
-}
-.renpic:hover {
-  transform: scale(1.1);
-  box-shadow: 0 2px 8px 0 rgba(245, 242, 242, 0.9);
-}
-.ren-info:hover {
-  transform: scale(1.4);
-  box-shadow: 0 2px 8px 0 rgba(245, 242, 242, 0.9);
-}
-.personal-heading-ren {
-  transition: transform 2s ease;
-}
-.personal-heading-ren:hover {
-  transform: scale(1.2);
-}
-.personal-info-ren:hover {
-  transform: perspective(900px) scale(0.8) rotateY(20deg) rotateX(20deg);
-  box-shadow: 5px 5px 15px 0px green;
-}
-.personal-skill-ren {
-  background-color: transparent;
-  backdrop-filter: blur(5px);
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 150%;
-  left: 45%;
-  text-align: center;
-  width: 40%;
-  height: 500px;
-  padding: 10px;
-  border-radius: 30px;
-  transition: transform 2s ease, box-shadow 2s;
-}
-.personal-skill-ren:hover {
-  transform: perspective(900px) scale(0.8) rotateY(20deg) rotateX(20deg);
-  box-shadow: 5px 5px 15px 0px green;
-}
-.skills1 {
-  background-color: rgb(214, 248, 151);
-  width: 40%;
-  padding: 5px;
-  margin-top: 50px;
-  margin-bottom: 0px;
-  border-radius: 10px;
-  border-bottom: 5px;
-  border-style: solid;
-  transition: transform 1s;
-}
-.skills2 {
-  background-color: rgb(18, 235, 83);
-  width: 80%;
-  padding: 5px;
-  margin-bottom: 0px;
-  margin-top: 30px;
-  border-radius: 10px;
-  border-bottom: 5px;
-  border-style: solid;
-  transition: transform 1s;
-}
-.skill-heading-luis {
-  margin-bottom: 0px;
-}
-.skills3 {
-  background-color: rgb(235, 139, 139);
-  width: 80%;
-  padding: 5px;
-  margin-bottom: 0px;
-  margin-top: 30px;
-  border-radius: 10px;
-  border-bottom: 5px;
-  border-style: solid;
-  transition: transform 1s;
-}
-.skills4 {
-  background-color: rgb(92, 124, 18);
-  width: 60%;
-  padding: 5px;
-  margin-bottom: 0px;
-  margin-top: 30px;
-  border-radius: 10px;
-  border-bottom: 5px;
-  border-style: solid;
-  transition: transform 1s;
-}
-.skills5 {
-  background-color: rgb(20, 120, 187);
-  width: 90%;
-  padding: 5px;
-  margin-bottom: 0px;
-  margin-top: 30px;
-  border-radius: 10px;
-  border-bottom: 5px;
-  border-style: solid;
-  transition: transform 1s;
-}
-.skills6 {
-  background-color: rgb(157, 18, 175);
-  width: 90%;
-  padding: 5px;
-  margin-bottom: 0px;
-  margin-top: 30px;
-  border-radius: 10px;
-  border-bottom: 5px;
-  border-style: solid;
-  transition: transform 1s;
-}
-.skills1:hover {
-  transform: scale(1.6);
-}
-.skills2:hover {
-  transform: scale(1.6);
-}
-
-.skills3:hover {
-  transform: scale(1.6);
-}
-
-.skills4:hover {
-  transform: scale(1.6);
-}
-
-.skills5:hover {
-  transform: scale(1.6);
-}
-
-.skills6:hover {
-  transform: scale(1.6);
-}
-.Projects-container-ren {
-  color: white;
-  background-color: transparent;
-  backdrop-filter: blur(5px);
-  display: flex;
-  justify-content: space-around;
-  align-content: center;
-  position: absolute;
-  top: 250%;
-  text-align: center;
-  width: 90%;
-  left: 4%;
-  height: 500px;
-  padding: 10px;
-  border-radius: 30px;
-  border-style: solid;
-  transition: transform 2s ease, box-shadow 2s;
-}
-.first-project {
-  color: white;
-  position: relative;
-  background-color: transparent;
-  border-radius: 10px;
-  margin-top: 80px;
-  width: 20%;
-  overflow: hidden;
-}
-.second-project {
-  color: white;
-  position: relative;
-  background-color: transparent;
-  margin-top: 80px;
-  border-radius: 10px;
-  width: 20%;
-  overflow: hidden;
-}
-.third-project {
-  color: white;
-  position: relative;
-  background-color: transparent;
-  margin-top: 80px;
-  border-radius: 10px;
-  width: 20%;
-  overflow: hidden;
-}
-.first-h1,
-.sec-h1,
-.third-h1 {
-  position: absolute;
-  top: 30%;
-  left: 10%;
-  font: 40px bold;
-}
-.skill-heading-ren {
-  color: white;
-}
-.contact-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: baseline;
-  align-items: center;
-  width: 100%;
-  padding: 40px;
-  background: black;
-  color: #fff;
-  text-align: center;
-  margin-top: 130%;
-  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Contact form styling */
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 20px auto;
-  max-width: 600px;
-}
-
-.contact-form input,
-.contact-form textarea,
-.contact-form button {
-  width: 100%;
-  padding: 10px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 5px;
-}
-
-.contact-form input,
-.contact-form textarea {
-  background: #ffffff;
-  color: #333;
-}
-
-.contact-form button {
-  background-color: #005bb5;
-  color: #fff;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.contact-form button:hover {
-  background-color: #004799;
-}
-
-/* Social links styling */
-.social-links {
-  margin-top: 20px;
-}
-
-.social-links a {
-  margin: 0 15px;
-  color: #ffffff;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.social-links a:hover {
-  color: #dfefff;
-}
-
-
+  
+  .intro {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 10%;
+    text-align: center;
+    position: relative;
+    left: 25%;
+    background-color: transparent;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    box-shadow: 5px 5px 15px 0px black;
+    transition: transform 2s ease, box-shadow 2s;
+    z-index: 1;
+  }
+  .intro:hover {
+    transform: perspective(900px) scale(0.8) rotateY(20deg) rotateX(20deg);
+    box-shadow: 5px 5px 15px 0px rgb(34, 156, 30);
+  }
+  
+  .sp1{
+    background-color: #00ffff;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: 2px solid beige;
+    transition: transform 1s;
+  }
+  .ren {
+    color: red;
+    text-decoration: none;
+    font-size: 40px;
+    transition: transform 1s, box-shadow 2s;
+  }
+  .ren:hover {
+    transform: scale(1.2);
+    box-shadow: 5px 5px 15px 0px white;
+  }
+  .sp1:hover {
+    transform: scale(1.2);
+  }
+  
+  .skills1 {
+    background-color: rgb(214, 248, 151);
+    width: 40%;
+    padding: 5px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    border-bottom: 5px;
+    border-style: solid;
+    transition: transform 1s;
+  }
+  .skills2 {
+    background-color: rgb(18, 235, 83);
+    width: 80%;
+    padding: 5px;
+    margin-bottom: 0px;
+    margin-top: 30px;
+    border-radius: 10px;
+    border-bottom: 5px;
+    border-style: solid;
+    transition: transform 1s;
+  }
+  .skill-heading-luis {
+    margin-bottom: 0px;
+  }
+  .skills3 {
+    background-color: rgb(235, 139, 139);
+    width: 80%;
+    padding: 5px;
+    margin-bottom: 0px;
+    margin-top: 30px;
+    border-radius: 10px;
+    border-bottom: 5px;
+    border-style: solid;
+    transition: transform 1s;
+  }
+  .skills4 {
+    background-color: rgb(92, 124, 18);
+    width: 60%;
+    padding: 5px;
+    margin-bottom: 0px;
+    margin-top: 30px;
+    border-radius: 10px;
+    border-bottom: 5px;
+    border-style: solid;
+    transition: transform 1s;
+  }
+  .skills5 {
+    background-color: rgb(20, 120, 187);
+    width: 90%;
+    padding: 5px;
+    margin-bottom: 0px;
+    margin-top: 30px;
+    border-radius: 10px;
+    border-bottom: 5px;
+    border-style: solid;
+    transition: transform 1s;
+  }
+  .skills6 {
+    background-color: rgb(157, 18, 175);
+    width: 90%;
+    padding: 5px;
+    margin-bottom: 0px;
+    margin-top: 30px;
+    border-radius: 10px;
+    border-bottom: 5px;
+    border-style: solid;
+    transition: transform 1s;
+  }
+  .skills1:hover {
+    transform: scale(1.6);
+  }
+  .skills2:hover {
+    transform: scale(1.6);
+  }
+  
+  .skills3:hover {
+    transform: scale(1.6);
+  }
+  
+  .skills4:hover {
+    transform: scale(1.6);
+  }
+  
+  .skills5:hover {
+    transform: scale(1.6);
+  }
+  
+  .skills6:hover {
+    transform: scale(1.6);
+  }
+  .Projects-container {
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    position: absolute;
+    top: 230%;
+    text-align: center;
+    width: 90%;
+    left: 4%;
+    height: 500px;
+    padding: 10px;
+    border-radius: 30px;
+    border-left: 5px black;
+    border-style: solid;
+    transition: transform 2s ease, box-shadow 2s;
+  }
+  .first-project {
+    color: white;
+    position: relative;
+    background-color: transparent;
+    border-radius: 10px;
+    margin-top: 80px;
+    width: 20%;
+    overflow: hidden;
+  }
+  .second-project {
+    color: white;
+    position: relative;
+    background-color: transparent;
+    margin-top: 80px;
+    border-radius: 10px;
+    width: 20%;
+    overflow: hidden;
+  }
+  .third-project {
+    color: white;
+    position: relative;
+    background-color: transparent;
+    margin-top: 80px;
+    border-radius: 10px;
+    width: 20%;
+    overflow: hidden;
+  }
+  .first-h1,
+  .sec-h1,
+  .third-h1 {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    font: 40px bold;
+  }
+  .personal-info-ren {
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    text-align: center;
+    width: 40%;
+    height: 500px;
+    padding: 10px;
+    border-radius: 30px;
+    color: white;
+    transition: transform 2s ease, box-shadow 2s;
+  }
+  
+  .ren-info {
+    width: 50%;
+    margin-left: 25%;
+    transition: transform 2s;
+  }
+  .renpic {
+    width: 30%;
+    margin-left: 259px;
+    border-radius: 70px;
+    transition: transform 2s;
+  }
+  .renpic:hover {
+    transform: scale(1.1);
+    box-shadow: 0 2px 8px 0 rgba(245, 242, 242, 0.9);
+  }
+  .ren-info:hover {
+    transform: scale(1.4);
+    box-shadow: 0 2px 8px 0 rgba(245, 242, 242, 0.9);
+  }
+  .personal-heading-ren {
+    transition: transform 2s ease;
+  }
+  .personal-heading-ren:hover {
+    transform: scale(1.2);
+  }
+  .personal-info-ren:hover {
+    transform: perspective(900px) scale(0.8) rotateY(20deg) rotateX(20deg);
+    box-shadow: 5px 5px 15px 0px green;
+  }
+  .personal-skill-ren {
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 150%;
+    left: 45%;
+    text-align: center;
+    width: 40%;
+    height: 500px;
+    padding: 10px;
+    border-radius: 30px;
+    transition: transform 2s ease, box-shadow 2s;
+  }
+  .personal-skill-ren:hover {
+    transform: perspective(900px) scale(0.8) rotateY(20deg) rotateX(20deg);
+    box-shadow: 5px 5px 15px 0px green;
+  }
+  .skills1 {
+    background-color: rgb(214, 248, 151);
+    width: 40%;
+    padding: 5px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    border-bottom: 5px;
+    border-style: solid;
+    transition: transform 1s;
+  }
+  .skills2 {
+    background-color: rgb(18, 235, 83);
+    width: 80%;
+    padding: 5px;
+    margin-bottom: 0px;
+    margin-top: 30px;
+    border-radius: 10px;
+    border-bottom: 5px;
+    border-style: solid;
+    transition: transform 1s;
+  }
+  .skill-heading-luis {
+    margin-bottom: 0px;
+  }
+  .skills3 {
+    background-color: rgb(235, 139, 139);
+    width: 80%;
+    padding: 5px;
+    margin-bottom: 0px;
+    margin-top: 30px;
+    border-radius: 10px;
+    border-bottom: 5px;
+    border-style: solid;
+    transition: transform 1s;
+  }
+  .skills4 {
+    background-color: rgb(92, 124, 18);
+    width: 60%;
+    padding: 5px;
+    margin-bottom: 0px;
+    margin-top: 30px;
+    border-radius: 10px;
+    border-bottom: 5px;
+    border-style: solid;
+    transition: transform 1s;
+  }
+  .skills5 {
+    background-color: rgb(20, 120, 187);
+    width: 90%;
+    padding: 5px;
+    margin-bottom: 0px;
+    margin-top: 30px;
+    border-radius: 10px;
+    border-bottom: 5px;
+    border-style: solid;
+    transition: transform 1s;
+  }
+  .skills6 {
+    background-color: rgb(157, 18, 175);
+    width: 90%;
+    padding: 5px;
+    margin-bottom: 0px;
+    margin-top: 30px;
+    border-radius: 10px;
+    border-bottom: 5px;
+    border-style: solid;
+    transition: transform 1s;
+  }
+  .skills1:hover {
+    transform: scale(1.6);
+  }
+  .skills2:hover {
+    transform: scale(1.6);
+  }
+  
+  .skills3:hover {
+    transform: scale(1.6);
+  }
+  
+  .skills4:hover {
+    transform: scale(1.6);
+  }
+  
+  .skills5:hover {
+    transform: scale(1.6);
+  }
+  
+  .skills6:hover {
+    transform: scale(1.6);
+  }
+  .Projects-container-ren {
+    color: white;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    position: absolute;
+    top: 250%;
+    text-align: center;
+    width: 90%;
+    left: 4%;
+    height: 500px;
+    padding: 10px;
+    border-radius: 30px;
+    border-style: solid;
+    transition: transform 2s ease, box-shadow 2s;
+  }
+  .first-project {
+    color: white;
+    position: relative;
+    background-color: transparent;
+    border-radius: 10px;
+    margin-top: 80px;
+    width: 20%;
+    overflow: hidden;
+  }
+  .second-project {
+    color: white;
+    position: relative;
+    background-color: transparent;
+    margin-top: 80px;
+    border-radius: 10px;
+    width: 20%;
+    overflow: hidden;
+  }
+  .third-project {
+    color: white;
+    position: relative;
+    background-color: transparent;
+    margin-top: 80px;
+    border-radius: 10px;
+    width: 20%;
+    overflow: hidden;
+  }
+  .first-h1,
+  .sec-h1,
+  .third-h1 {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    font: 40px bold;
+  }
+  .skill-heading-ren {
+    color: white;
+  }
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    width: 100%;
+    padding: 40px;
+    background: black;
+    color: #fff;
+    text-align: center;
+    margin-top: 130%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Contact form styling */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 600px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form button {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    background: #ffffff;
+    color: #333;
+  }
+  
+  .contact-form button {
+    background-color: #005bb5;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #004799;
+  }
+  
+  /* Social links styling */
+  .social-links {
+    margin-top: 20px;
+  }
+  
+  .social-links a {
+    margin: 0 15px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .social-links a:hover {
+    color: #dfefff;
+  }
